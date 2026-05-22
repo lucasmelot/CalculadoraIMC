@@ -1,121 +1,59 @@
-# ⚖️ Calculadora de IMC
+# 🧮 Calculadora de IMC
 
-Projeto desenvolvido com foco na prática de **HTML, CSS e JavaScript**, criando uma aplicação simples e funcional para cálculo do **Índice de Massa Corporal (IMC)**.
-
----
-
-## 🚀 Objetivo
-
-O objetivo deste projeto é aplicar conceitos fundamentais do desenvolvimento web, criando uma aplicação interativa capaz de:
-
-* Receber dados do usuário
-* Realizar cálculos em tempo real
-* Exibir resultados dinâmicos na tela
+Uma calculadora de Índice de Massa Corporal (IMC) simples, interativa e responsiva desenvolvida em HTML, CSS e JavaScript. O projeto permite que o usuário insira seu peso e altura para obter o diagnóstico do seu status de peso atualizado instantaneamente, sem recarregar a página.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 📸 Demonstração do Projeto
 
-* HTML5
-* CSS3
-* JavaScript
+Abaixo estão as capturas de tela da interface e do funcionamento da aplicação:
 
----
+### Tela Inicial
+Aqui está a interface limpa e intuitiva onde o usuário pode inserir seus dados:
+![Interface da Calculadora](site.png)
 
-## 📸 Preview do projeto
-
-> *(Adicione aqui um print ou GIF da aplicação funcionando)*
-
----
-
-## 📁 Estrutura de pastas
-
-```
-📦 calculadora-imc
- ┣ 📂 assets
- ┃ ┗ 📂 images
- ┣ 📜 index.html
- ┣ 📜 style.css
- ┣ 📜 script.js
- ┗ 📜 README.md
-```
+### Resultado da Consulta
+Exemplo de feedback exibido na tela após o processamento do IMC:
+![Resultado do IMC](resultado.png)
 
 ---
 
-## 🎯 Funcionalidades
+## 🚀 Funcionalidades
 
-* Entrada de peso (kg)
-* Entrada de altura (m)
-* Cálculo automático do IMC
-* Exibição do resultado
-* Classificação do IMC (ex: abaixo do peso, normal, sobrepeso, etc.)
-* Validação básica dos campos
+- **Cálculo em Tempo Real:** Processamento imediato através do evento `onsubmit` utilizando JavaScript.
+- **Prevenção de Recarregamento:** Uso de `event.preventDefault()` para garantir uma experiência SPA (Single Page Application) fluida.
+- **Limpador Automático:** Os campos de entrada de dados são limpos automaticamente após a exibição do resultado para facilitar novas consultas.
+- **Categorização Precisa:** Classificação do peso do usuário baseada nas faixas padrão de IMC.
 
 ---
 
-## 🧠 Fórmula utilizada
+## 📊 Regras de Classificação Utilizadas
 
-O cálculo do IMC segue a fórmula:
+O sistema classifica o resultado conforme os dados inseridos e a tabela oficial abaixo:
 
-```
-IMC = peso / (altura * altura)
-```
-
----
-
-## 📊 Classificação do IMC
-
-| IMC            | Classificação      |
-| -------------- | ------------------ |
-| Menor que 18.5 | Abaixo do peso     |
-| 18.5 – 24.9    | Peso normal        |
-| 25 – 29.9      | Sobrepeso          |
-| 30 – 34.9      | Obesidade grau I   |
-| 35 – 39.9      | Obesidade grau II  |
-| 40 ou mais     | Obesidade grau III |
+| IMC | Classificação |
+| :--- | :--- |
+| **Abaixo de 17** | Muito abaixo do peso |
+| **Entre 17 e 18,49** | Abaixo do peso |
+| **Entre 18,5 e 24,99** | Peso normal (adequado) |
+| **A partir de 25** | Acima do peso |
 
 ---
 
-## 📚 Aprendizados
+## 🛠️ Tecnologias Utilizadas
 
-Durante o desenvolvimento, foram praticados:
-
-* Manipulação do DOM com JavaScript
-* Captura de eventos (click, submit)
-* Trabalhar com inputs de formulário
-* Lógica de programação aplicada
-* Organização de código frontend
+- **HTML5:** Estruturação semântica dos formulários e elementos de saída.
+- **CSS3:** Estilização e responsividade da interface (arquivo `style.css`).
+- **JavaScript (ES6):** Manipulação de DOM e lógica de cálculo matemático (arquivo `script.js`).
 
 ---
 
-## 🔧 Como executar o projeto
+## 📦 Como Executar o Projeto
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/lucasmelo1704/CalculadoraIMC.git
-```
-
-2. Acesse a pasta:
-
-```bash
-cd CalculadoraIMC
-```
-
-3. Abra o arquivo `index.html` no navegador.
+1. Baixe ou clone este repositório em sua máquina local.
+2. Certifique-se de que os arquivos `index.html`, `style.css`, `script.js`, `site.png` e `resultado.png` estejam na **mesma pasta (diretório raiz)**.
+3. Dê um duplo clique no arquivo `index.html` para abrir diretamente no seu navegador web favorito.
 
 ---
 
-## 👨‍💻 Autor
-
-Desenvolvido por Lucas Andrade de Melo 🚀 <br>
-Linkedin: https://l1nk.dev/kce2nh0 <br>
-Github: https://github.com/lucasmelo1704
-
----
-
-## 📢 Considerações finais
-
-Esse projeto reforça a base de **JavaScript na prática**, sendo um excelente exercício para entender como criar aplicações interativas no navegador.
-
----
+Desenvolvido para fins de estudo e prática de manipulação de DOM com JavaScript puro. 💻✨
